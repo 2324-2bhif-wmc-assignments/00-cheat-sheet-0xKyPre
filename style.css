@@ -147,6 +147,7 @@ a {
     padding: 1rem;
     background-color: var(--contain_background_color);
     padding: 2rem;
+    border-radius: 1rem;
 }
 
 .container {
@@ -165,6 +166,7 @@ a {
     border: 2px solid #fff;
     padding: 1rem;
     background-color: #10182331;
+    border-radius: 1rem;
 }
 
 .window:hover {
@@ -176,6 +178,8 @@ a {
 .window img {
     width: 50%;
     transition: all 2.5s;
+    background-color: #ffffff14;
+    border-radius: 1rem;
 }
 
 .window:hover img {
