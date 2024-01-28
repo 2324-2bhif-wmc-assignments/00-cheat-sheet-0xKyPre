@@ -1,3 +1,14 @@
+:root {
+    --überschrift_1_farbe: #fff;
+    --überschrift_2_farbe: #fff;
+    --überschrift_3_farbe: #76f9f9;
+    --überschrift_4_farbe: #fff;
+    --überschrift_5_farbe: #76f9f9;
+    --code_farbe: #80FFFD;
+    --absatz_farbe: #5d8381;
+    --contain_background_color: #0d0e1195;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,27 +27,62 @@ body {
 
 h1 {
     margin-top: 8rem;
-    color: #fff;
-    font-size: 3rem;
+    color: var(--überschrift_1_farbe);
+    font-size: 4rem;
 }
 
 h3 {
-    color: #fff;
+    font-size: 3rem;
+    color: var(--überschrift_3_farbe);
 }
 
 h4 {
+    font-size: 2rem;
     margin-top: 1.2rem;
-    text-decoration: underline;
+    color: var(--überschrift_4_farbe);
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: var(--überschrift_5_farbe);
+    margin-top: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+
 }
 
 i {
-    color: aqua;
+    color: var(--code_farbe);
 }
 
 code {
-    color: aqua;
+    color: var(--code_farbe);
+    justify-content: center;
     text-align: left;
 }
+
+ul {
+    text-align: left;
+}
+
+li {
+    margin-top: 0.3vh;
+}
+
+strong {
+    font-size: 110%;
+    color: var(--code_farbe);
+}
+
+a {
+    text-decoration: none;
+    color: #a4b1cd;
+}
+
+/*------------------------ TAGS ------------------------*/
 
 .menubar {
     display: flex;
@@ -53,6 +99,10 @@ code {
     transition: all 0.50s ease;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     height: 4.5rem;
+}
+
+.undercontent {
+    padding: 1rem;
 }
 
 .logo {
@@ -77,7 +127,7 @@ code {
 }
 
 .content {
-    color: #a4b1cd;
+    color: var(--absatz_farbe);
     text-align: center;
 }
 
@@ -89,19 +139,14 @@ code {
 }
 
 .contain {
-    width: 40rem;
+    width: 42rem;
     height: auto;
     transition: all 0.4s;
     margin: 2.5rem;
     border: 2px solid #fff;
     padding: 1rem;
-    background-color: #0d0e1195;
-    border-radius: 1rem;
+    background-color: var(--contain_background_color);
     padding: 2rem;
-}
-
-li {
-    margin-top: 0.3vh;
 }
 
 .container {
@@ -124,7 +169,7 @@ li {
 
 .window:hover {
     transform: translateY(-8%);
-    border: 4px solid aqua;
+    border: 4px solid var(--code_farbe);
     background-color: #00000070;
 }
 
@@ -137,11 +182,6 @@ li {
     transform: rotateY(360deg);
 }
 
-a {
-    text-decoration: none;
-    color: #a4b1cd;
-}
-
 .contain iframe {
     width: 100%;
     height: 25rem;
@@ -152,11 +192,11 @@ a {
 }
 
 .goto:hover {
-    color: aqua;
+    color: var(--code_farbe);
 }
 
 .footer {
-    color: aqua;
+    color: var(--code_farbe);
     font-size: 1.3rem;
     border-radius: 2rem;
     background-color: #0d0e11d2;
@@ -166,17 +206,13 @@ a {
     position: relative;
 }
 
-strong {
-    color: aqua;
-}
-
-
-.typewriter h1 {
+.typewriter h2 {
+    font-size: 2.6rem;
     border: 0 0 0 0;
     width: fit-content;
     display: flex;
     overflow: hidden;
-    border-right: .15em solid rgb(0, 255, 247);
+    border-right: .15em solid var(--code_farbe);
     white-space: nowrap;
     margin: 0;
     letter-spacing: .15em;
@@ -201,6 +237,6 @@ strong {
     }
 
     50% {
-        border-color: rgb(0, 255, 247);
+        border-color: var(--code_farbe);
     }
 }
