@@ -21,226 +21,307 @@
 
     <!--Content-->
     <div class="content">
-        <h1>Bootstrap...</h1>
-        <h3>fast, easy und responsiv</h3>
-        <div class="container">
-            <div class="contain">
-                <h3>Basics</h3>
-                <h4>beginning</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                &lt;div class="container">&lt;/div> - auto padding margin usw.
-
-                &lt;h1 class="page-header">Page Header&lt;/h1> 
-                - geht bei allem h1 - h6
-            
-                &lt;p class="lead(hervorheben) / del(durchstreichen) / 
-                    u(underlined) / mark(markiert)">
-                    Dieser Text sollte hervorgehoben sein...
-                &lt;/p>
-                        </pre>
-                    </code>
-                </div>
-
-                <h4>Alignment and Transformation</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                &lt;div class="alignment-and-transformation">
-                    &lt;p class="text-left">Text linksbündig&lt;/p>
-            
-                    &lt;p class="text-center">Text im Center&lt;/p>
-            
-                    &lt;p class="text-end">Text rechtsbündig&lt;/p>  // bei 
-                        alter version text-right
-            
-                    &lt;p class="text-justify">Justified Text&lt;/p>
-            
-                    &lt;p class="text-lowercase">HiEr giBT eS KEiNe 
-                        GrOßBucHSTabEN!&lt;/p> 
-            
-                    &lt;p class="text-uppercase">HiEr giBT eS KEiNe 
-                        KleINBucHSTabEN!&lt;/p>  
-            
-                &lt;p class="text-capitalize">HiEr iSt eS nOrmAl!&lt;/p>  
-                        </pre>
-                    </code>
-                </div> 
-
-                <h4>Floating</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-        &lt;div class="floating"&gt;<br>
-        &nbsp;&nbsp;&lt;div class="mark float-end"&gt;Div floated zum Ende&lt;/div&gt;<br>
-        &nbsp;&nbsp;&lt;div class="mark float-start"&gt;Div floated zum Anfang&lt;/div&gt;<br>
-        &nbsp;&nbsp;&lt;div class="mark float-none"&gt;Div floated nicht&lt;/div&gt;<br>
-        &nbsp;&nbsp;&lt;p&gt;text nach div&lt;/p&gt;<br>
-        &lt;/div&gt;
-                </pre>
-            </code>
-        </div>
-
-        <h4>Blockquotes</h4>
-        <div class="undercontent">
-            <code>
-                <pre>
-        &lt;!-- blockquote / blockquote-reverse--&gt;<br>
-        &lt;blockquote class="blockquote-reverse"&gt; <br>
-        <br>
-        &nbsp;&nbsp;&lt;p&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;consectetur adipiscing <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;elit. Integer posuere erat a ante.<br>
-        &nbsp;&nbsp;&lt;/p&gt;<br>
-        <br>
-        &nbsp;&nbsp;&lt;footer&gt;Quote by <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;cite title="Kylian Preining"&gt;Kylian Preining&lt;/cite&gt;<br>
-        &nbsp;&nbsp;&lt;/footer&gt;<br>
-        <br>
-        &lt;/blockquote&gt;
-                </pre>
-            </code>
-        </div>
-
-        <h4>Lists</h4>
-        <div class="undercontent">
-            <code>
-                <pre>
-&lt;ul class="list-unstyled">
-    &lt;li&gt;List ONE&lt;/li&gt;<br>
-    &lt;li&gt;List TWO&lt;/li&gt;
-&lt;/ul>
-
-&lt;ul class="list-inline">
-    &lt;li&gt;List ONE&lt;/li&gt;<br>
-    &lt;li&gt;List TWO&lt;/li&gt;
-&lt;/ul>
-
-&lt;ul class="list-group">
-    &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;<br>
-    &lt;li class="list-group-item"&gt;Dapibus ac &lt;/li&gt;<br>
-    &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;<br>
-    &lt;li class="list-group-item disabled"&gt;disabled&lt;/li&gt;<br>
-    &lt;li class="list-group-item active"&gt;active&lt;/li&gt; 
-&lt;/ul>
-
-&lt;div class="list-group-anchors">
-    &lt;a href="#" class="list-group-item list-group-item-action"&gt;Lorem Ipsum&lt;/a&gt;<br>
-
-    &lt;a href="#" class="list-group-item list-group-item-action disabled"&gt;
-        Lorem Ipsum
-    &lt;/a&gt;<br>
-
-    &lt;a href="#" class="list-group-item active"&gt;
-        Lorem Ipsum
-    &lt;/a&gt;
-&lt;/div>
-
-&lt;div class="list-group">
-
-    &lt;button type="button" class="list-group-item list-group-item-action"&gt;
-        Lorem Ipsum
-    &lt;/button&gt;<br>
-
-    &lt;button type="button" class="list-group-item list-group-item-action disabled"&gt;
-        Morbi leo risus
-    &lt;/button&gt;<br>
-
-    &lt;button type="button" class="list-group-item list-group-item-action active"&gt;
-        Cras justo odio
-    &lt;/button&gt;
-&lt;/div>
-
-&lt;div class="list-group">
-    &lt;a href="#" class="list-group-item list-group-item-action"&gt;Dapibus in&lt;/a&gt;<br>
-
-    &lt;a href="#" class="list-group-item list-group-item-primary"&gt;
-        This is a primary list group item
-    &lt;/a&gt;
-    &lt;/div>
-
-was man noch verwenden kann:<br>
-- list-group-item-secondary<br>
-- list-group-item-success<br>
-- list-group-item-danger<br>
-- list-group-item-warning<br>
-- list-group-item-info<br>
-- list-group-item-light<br>
-- list-group-item-dark               
-                        </pre>
-                    </code>
-                </div>
-
-                <h4>Contextual-Color</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                &lt;p class="text-primary">Blaue Farbe (primary)&lt;/p>
-                &lt;p class="text-success">Grüne Farbe (success)&lt;/p>
-                &lt;p class="text-info">Türkise Farbe (info)&lt;/p>
-                &lt;p class="text-warning">Orange Farbe (warning)&lt;/p>
-                &lt;p class="text-danger">Rote Farbe (danger)&lt;/p>
-                &lt;p class="text-muted">Graue Farbe (muted)&lt;/p>
+        <div class="center-items">
+            <div class="container">
+                <h1>Bootstrap...</h1>
+                <h3>fast, easy und responsiv</h3>
+                <div class="contain">
+                    <h3>Basics</h3>
+                    <h4>beginning</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+                    &lt;div class="container">&lt;/div> - auto padding margin usw.
+    
+                    &lt;h1 class="page-header">Page Header&lt;/h1> 
+                    - geht bei allem h1 - h6
                 
-                &lt;p class="bg-primary">BG - Blaue Farbe (primary)&lt;/p>
-                &lt;p class="bg-success">BG - Grüne Farbe (success)&lt;/p>
-                &lt;p class="bg-info">BG - Türkise Farbe (info)&lt;/p>
-                &lt;p class="bg-warning">BG - Orange Farbe (warning)&lt;/p>
-                &lt;p class="bg-danger">BG - Rote Farbe (danger)&lt;/p>
-                &lt;p class="bg-muted">BG - Keine Farbe (muted)&lt;/p>            
-                        </pre>
-                    </code>
+                    &lt;p class="lead(hervorheben) / del(durchstreichen) / 
+                        u(underlined) / mark(markiert)">
+                        Dieser Text sollte hervorgehoben sein...
+                    &lt;/p>
+                            </pre>
+                        </code>
+                    </div>
+    
+                    <h4>Alignment and Transformation</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+                    &lt;div class="alignment-and-transformation">
+                        &lt;p class="text-left">Text linksbündig&lt;/p>
+                
+                        &lt;p class="text-center">Text im Center&lt;/p>
+                
+                        &lt;p class="text-end">Text rechtsbündig&lt;/p>  // bei 
+                            alter version text-right
+                
+                        &lt;p class="text-justify">Justified Text&lt;/p>
+                
+                        &lt;p class="text-lowercase">HiEr giBT eS KEiNe 
+                            GrOßBucHSTabEN!&lt;/p> 
+                
+                        &lt;p class="text-uppercase">HiEr giBT eS KEiNe 
+                            KleINBucHSTabEN!&lt;/p>  
+                
+                    &lt;p class="text-capitalize">HiEr iSt eS nOrmAl!&lt;/p>  
+                            </pre>
+                        </code>
+                    </div> 
+    
+                    <h4>Floating</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+            &lt;div class="floating"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="mark float-end"&gt;Div floated zum Ende&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div class="mark float-start"&gt;Div floated zum Anfang&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div class="mark float-none"&gt;Div floated nicht&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;text nach div&lt;/p&gt;<br>
+            &lt;/div&gt;
+                    </pre>
+                </code>
+            </div>
+    
+            <h4>Blockquotes</h4>
+            <div class="undercontent">
+                <code>
+                    <pre>
+            &lt;!-- blockquote / blockquote-reverse--&gt;<br>
+            &lt;blockquote class="blockquote-reverse"&gt; <br>
+            <br>
+            &nbsp;&nbsp;&lt;p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;consectetur adipiscing <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;elit. Integer posuere erat a ante.<br>
+            &nbsp;&nbsp;&lt;/p&gt;<br>
+            <br>
+            &nbsp;&nbsp;&lt;footer&gt;Quote by <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;cite title="Kylian Preining"&gt;Kylian Preining&lt;/cite&gt;<br>
+            &nbsp;&nbsp;&lt;/footer&gt;<br>
+            <br>
+            &lt;/blockquote&gt;
+                    </pre>
+                </code>
+            </div>
+    
+            <h4>Lists</h4>
+            <div class="undercontent">
+                <code>
+                    <pre>
+    &lt;ul class="list-unstyled">
+        &lt;li&gt;List ONE&lt;/li&gt;<br>
+        &lt;li&gt;List TWO&lt;/li&gt;
+    &lt;/ul>
+    
+    &lt;ul class="list-inline">
+        &lt;li&gt;List ONE&lt;/li&gt;<br>
+        &lt;li&gt;List TWO&lt;/li&gt;
+    &lt;/ul>
+    
+    &lt;ul class="list-group">
+        &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;<br>
+        &lt;li class="list-group-item"&gt;Dapibus ac &lt;/li&gt;<br>
+        &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;<br>
+        &lt;li class="list-group-item disabled"&gt;disabled&lt;/li&gt;<br>
+        &lt;li class="list-group-item active"&gt;active&lt;/li&gt; 
+    &lt;/ul>
+    
+    &lt;div class="list-group-anchors">
+        &lt;a href="#" class="list-group-item list-group-item-action"&gt;Lorem Ipsum&lt;/a&gt;<br>
+    
+        &lt;a href="#" class="list-group-item list-group-item-action disabled"&gt;
+            Lorem Ipsum
+        &lt;/a&gt;<br>
+    
+        &lt;a href="#" class="list-group-item active"&gt;
+            Lorem Ipsum
+        &lt;/a&gt;
+    &lt;/div>
+    
+    &lt;div class="list-group">
+    
+        &lt;button type="button" class="list-group-item list-group-item-action"&gt;
+            Lorem Ipsum
+        &lt;/button&gt;<br>
+    
+        &lt;button type="button" class="list-group-item list-group-item-action disabled"&gt;
+            Morbi leo risus
+        &lt;/button&gt;<br>
+    
+        &lt;button type="button" class="list-group-item list-group-item-action active"&gt;
+            Cras justo odio
+        &lt;/button&gt;
+    &lt;/div>
+    
+    &lt;div class="list-group">
+        &lt;a href="#" class="list-group-item list-group-item-action"&gt;Dapibus in&lt;/a&gt;<br>
+    
+        &lt;a href="#" class="list-group-item list-group-item-primary"&gt;
+            This is a primary list group item
+        &lt;/a&gt;
+        &lt;/div>
+    
+                                was man noch verwenden kann:<br>
+                                - list-group-item-secondary<br>
+                                - list-group-item-success<br>
+                                - list-group-item-danger<br>
+                                - list-group-item-warning<br>
+                                - list-group-item-info<br>
+                                - list-group-item-light<br>
+                                - list-group-item-dark               
+                            </pre>
+                        </code>
+                    </div>
+    
+                    <h4>Contextual-Color</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+                    &lt;p class="text-primary">Blaue Farbe (primary)&lt;/p>
+                    &lt;p class="text-success">Grüne Farbe (success)&lt;/p>
+                    &lt;p class="text-info">Türkise Farbe (info)&lt;/p>
+                    &lt;p class="text-warning">Orange Farbe (warning)&lt;/p>
+                    &lt;p class="text-danger">Rote Farbe (danger)&lt;/p>
+                    &lt;p class="text-muted">Graue Farbe (muted)&lt;/p>
+                    
+                    &lt;p class="bg-primary">BG - Blaue Farbe (primary)&lt;/p>
+                    &lt;p class="bg-success">BG - Grüne Farbe (success)&lt;/p>
+                    &lt;p class="bg-info">BG - Türkise Farbe (info)&lt;/p>
+                    &lt;p class="bg-warning">BG - Orange Farbe (warning)&lt;/p>
+                    &lt;p class="bg-danger">BG - Rote Farbe (danger)&lt;/p>
+                    &lt;p class="bg-muted">BG - Keine Farbe (muted)&lt;/p>            
+                            </pre>
+                        </code>
+                    </div>
+    
+                    <h4>Buttons</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+                &lt;div class="basic-buttons">
+                    &lt;h5>Basic-Buttons&lt;/h5>
+            
+                    &lt;button class="btn btn-default">Standart&lt;/button>
+            
+                    &lt;a href="#" class="btn btn-default" role="button">
+                        Standart Anchor Button
+                    &lt;/a>
+            
+                    &lt;input type="submit" class="btn btn-default" value="Submit">
+                &lt;/div>
+            
+                &lt;div class="contextual-buttons">
+                    &lt;h5>Contextual Buttons&lt;/h5>
+                    
+                    &lt;button class="btn btn-warning">btn - ORANGE (warning)&lt;/button>
+            
+                    Alle Contextual Farben:
+                        btn btn-default
+                        btn btn-warning
+                        btn btn-danger
+                        btn btn-success
+                        btn btn-link
+                        btn btn-info
+                        btn btn-primary
+                &lt;/div> 
+            
+                &lt;div class="button-sizes">
+                    &lt;h5>Button-Sizes&lt;/h5>
+            
+                    &lt;button class="btn btn-default btn-lg">large&lt;/button>
+            
+                    &lt;button class="btn btn-default">default&lt;/button>
+            
+                    &lt;button class="btn btn-primary btn-sm">small&lt;/button>
+            
+                    &lt;button class="btn btn-default btn-xs" disabled>
+                        extra small and disabled
+                    &lt;/button>
+                &lt;/div>           
+                            </pre>
+                        </code>
+                    </div>
+    
+                    <h4>Tables</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+                Funktionierende Tables:
+                    - table
+                    - table-striped
+                    - table-bordered
+                    - table-hover
+                    - table-condensed
+            
+                &lt;table class="table-bordered">
+                    &lt;tr>
+                        &lt;th>FirstName&lt;/th>
+                        &lt;th>SecondName&lt;/th>
+                        &lt;th>Age&lt;/th>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;td>Jill&lt;/td>
+                        &lt;td>Smith&lt;/td>
+                        &lt;td>50&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                &lt;/table>                
+                            </pre>
+                        </code>
+                    </div>
+    
+                    <h4>Cards</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+                &lt;div class="card" style="width: 20rem;">
+                    &lt;img class="card-img-top" src="..." alt="Card image cap">
+                    &lt;div class="card-body">
+                        &lt;h4 class="card-title">Card title&lt;/h4>
+                        &lt;p class="card-text">Some quick example text.&lt;/p>
+                        &lt;a href="#" class="btn btn-primary">Go somewhere&lt;/a>
+                    &lt;/div>
+                &lt;/div>           
+                            </pre>
+                        </code>   
+                    </div>
+    
+                    <h4>Images and Figures</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+                        &lt;img src="picture of your choice" 
+                                class="img-responisve" alt="Responsive"> 
+    
+                        &lt;img src="picture of your choice" 
+                                class="img-rounded" alt="rounded corners">       
+                            </pre>
+                        </code>
+                    </div>
+    
+                    <h4>Einbinden</h4>
+                    <div class="undercontent">
+                        <code>
+                            <pre>
+    CSS:
+    &lt;link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    
+    
+    Javascript:
+    &lt;script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+    &lt;/script>            
+                            </pre>
+                        </code>
+                    </div>
                 </div>
-
-                <h4>Buttons</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
-                </div>
-
-                <h4>Tables</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
-                </div>
-
-                <h4>Cards</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>   
-                </div>
-
-                <h4>Images and Figures</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
-                </div>
-
-                <h4>Einbinden</h4>
-                <div class="undercontent">
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
-                </div>
-
-                <img src="png/baustelle.png" alt="nothing there (in bearbeitung)">
-                <h3>nothing here</h3>
             </div>
         </div>
     </div>

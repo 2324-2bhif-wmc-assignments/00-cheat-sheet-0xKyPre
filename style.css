@@ -94,7 +94,7 @@ a {
     align-items: center;
     justify-content: space-between;
     background-color: #0d0e1196;
-    backdrop-filter: blur(0.25rem);
+    backdrop-filter: blur(0.10rem);
     padding: 28px 12%;
     transition: all 0.50s ease;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
@@ -129,6 +129,7 @@ a {
 .content {
     color: var(--absatz_farbe);
     text-align: center;
+    display: flex;
 }
 
 .choosemenu {
@@ -136,6 +137,76 @@ a {
     align-items: center;
     justify-content: center;
     margin: 2.5rem;
+}
+
+table.syntax{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #cfdddc1b;
+    color: rgb(0, 255, 247);
+}
+
+div.syntax{
+    margin: 1rem;
+    padding: 2rem;
+    border: 0.1rem white dotted;
+    border-radius: 3rem;
+}
+
+table.syntax td, table.syntax th{
+    border: aqua solid 0.2rem;
+    padding: 0.2rem;
+}
+
+.aqua-border-box{
+    border: aqua;
+    background-color: aqua;
+    border-radius: 1.2rem;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    margin: 0.4rem;
+}
+
+.box_model{
+    margin: 8rem 0 8rem 0;
+}
+
+.margin_box{
+    padding: 8rem 1.8rem 8rem 1.8rem;
+    background-color: rgb(255, 202, 137);
+    border-radius: 0.75rem;
+    transition: all 0.2s linear;
+}
+
+.border_box{
+    padding: 6.5rem 1.8rem 6rem 1.8rem;
+    background-color:rgb(255, 231, 187) ;
+    border: black 0.1rem solid;
+    border-radius: 0.6rem;
+    transition: all 0.2s linear;
+}
+.border_box:hover{
+}
+
+.padding_box{
+    padding: 4.5rem 1.8rem 4.5rem 1.8rem;
+    background-color: rgb(146, 190, 155);
+    border-radius: 0.45rem;
+    transition: all 0.2s linear;
+}
+.padding_box:hover{
+}
+
+.content_box{
+    padding: 3rem 5rem 3rem 5rem;
+    background-color: rgb(155, 201, 242);
+    color: blue;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+    transition: all 0.2s linear;
 }
 
 .contain {
@@ -243,4 +314,12 @@ a {
     50% {
         border-color: var(--code_farbe);
     }
+}
+
+div.center-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
 }

@@ -23,191 +23,193 @@
 
     <!--Content-->
     <div class="content">
-        <h1>HTML...</h1>
-        <h3>Hyper Text Markup Language</h3>
-        <div class="container">
-            <div class="contain">
-                <h3 id="beginning"><strong>basics</strong></h3>
-
-                <h4 id="elemente">HTML Elemente</h4>
-                <div>
-                    <ul>
-                        <li><strong>HTML-Element: </strong>Ein HTML-Element erstreckt sich von der start-tag bis zum
-                            end-tag. <code><em>&lt;p&gt;Ich bin ein Element.&lt;/p&gt;</em></code>
-                        </li>
-                        <li><strong>Void-Element: </strong>Ein Tag wie: <code><em>&lt;input&gt;</em></code> ist ein Void-Element -
-                            <em>es hat
-                                keinen
-                                end-tag</em>
-                        </li>
-                    </ul>
+        <div class="center-items">
+            <div class="container">
+                <h1>HTML...</h1>
+                <h3>Hyper Text Markup Language</h3>
+                <div class="contain">
+                    <h3 id="beginning"><strong>basics</strong></h3>
+    
+                    <h4 id="elemente">HTML Elemente</h4>
+                    <div>
+                        <ul>
+                            <li><strong>HTML-Element: </strong>Ein HTML-Element erstreckt sich von der start-tag bis zum
+                                end-tag. <code><em>&lt;p&gt;Ich bin ein Element.&lt;/p&gt;</em></code>
+                            </li>
+                            <li><strong>Void-Element: </strong>Ein Tag wie: <code><em>&lt;input&gt;</em></code> ist ein Void-Element -
+                                <em>es hat
+                                    keinen
+                                    end-tag</em>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h4 id="attribute">Attribute</h4>
+                    <p>HTML-Elemente können Attribute haben, um zusätzliche Informationen über die
+                        Elemente
+                        bereitzustellen. Diese
+                        Attribute werden im Starttag angegeben und sehen normalerweise so aus:
+                        <em><code>attributName="attributWert"</code></em>.
+                    </p>
+    
+                    <h4 id="headlines">Überschriften</h4>
+                    <p>Überschriften werden mit den Tags <code>&lt;h1&gt;&lt;/h1&gt;</code> bis
+                        <code>&lt;h6&gt;&lt;/h6&gt;</code>
+                        definiert. Die
+                        Überschriften von 1 bis 6 werden immer weniger wichtig, wobei <code>&lt;h1&gt;&lt;/h1&gt;</code> die wichtigste
+                        ist.
+                        Überschriften werden von Suchmaschinen verwendet, um den Inhalt und die Struktur Ihrer Webseiten zu
+                        indizieren.
+                    </p>
+    
+                    <h4 id="paragraphes">Absätze</h4>
+                    <p>Ein neuer Absatz wird mit dem <code>&lt;p&gt;</code>-Tag definiert. Absätze
+                        beginnen immer
+                        auf einer neuen
+                        Zeile
+                        mit etwas Abstand davor und danach. Der Browser entfernt überflüssige Leerzeichen und Zeilen in
+                        einem
+                        Absatz, wenn die Seite angezeigt wird.</p>
+    
+                    <p>Es gibt auch zwei leere Tags, die in oder zwischen Absätzen verwendet werden:
+                        <code>&lt;br&gt;</code> und
+                        <code>&lt;hr&gt;</code>.
+                    </p>
+    
+                    <p>Der <code>&lt;br&gt;</code>-Tag definiert einen Zeilenumbruch (Zeilenumbruch),
+                        sogar in
+                        einem Absatz.</p>
+    
+                    <p>Der <code>&lt;hr&gt;</code>-Tag definiert einen thematischen Abschnitt auf einer
+                        HTML-Seite
+                        und wird meistens
+                        als
+                        horizontale Linie dargestellt. Sein häufigster Verwendungszweck ist die Trennung von Inhalten.</p>
+    
+                    <h4 id="comments">Kommentare</h4>
+                    <p>
+                        Kommentare können mit <code>&lt;!-- Das hier ist ein Kommentar --&gt;</code>
+                        dieser Syntax
+                        hinzugefügt werden.
+                        Das
+                        Ausrufezeichen (!) wird nur im Starttag verwendet. Kommentare können verwendet werden, um Inhalte zu
+                        verbergen
+                        und können über mehrere Zeilen erstreckt werden.</p>
+    
+                    <h4 id="links">Links</h4>
+                    <p>
+                        Das <code>&lt;a&gt;</code>-Tag definiert einen Hyperlink. Das wichtigste
+                        Attribut von
+                        <em><code>&lt;a&gt;</code></em>
+                        ist
+                        <em><code>href</code></em>, das das Ziel des Links angibt. Wenn Sie auf die Links klicken, werden
+                        Sie zur
+                        angegebenen
+                        URL
+                        gesendet. Ein weiteres Attribut von <code>&lt;a&gt;</code> ist <code>target</code>. Mögliche Werte
+                        für das
+                        <code>target</code>-Attribut sind: <code>_self</code>, <code>_blank</code>, <code>_parent</code>,
+                        <code>_top</code>. Sie können fast alles zu einem Link machen, indem Sie <code>&lt;a&gt;</code>
+                        verwenden.
+                    </p>
+    
+                    <h4 id="pictures">Bilder</h4>
+                    <p>
+                        Bilder können das Design und das Erscheinungsbild einer Webseite verbessern. Das
+                        <code>&lt;img&gt;</code>-Tag
+                        wird verwendet, um ein Bild einzubetten. Ein Bild wird nicht eingefügt, sondern mit der Webseite
+                        verknüpft.
+                        Dieses Tag ist ein leeres Tag und enthält nur Attribute. Wenn eine Webseite geladen wird, ist es der
+                        Browser,
+                        der das Bild von einem Webserver abruft und in die Seite einfügt.
+                    </p>
+    
+                    <p>
+                        Die beiden erforderlichen Attribute sind <code>src</code> (gibt den Pfad zum
+                        Bild an) und
+                        <code>alt</code>
+                        (gibt
+                        einen alternativen Text für das Bild an). Bilder können auch das Attribut <code>height</code> und
+                        <code>width</code> haben, um die Höhe und Breite des Bildes zu ändern (dies sollte jedoch in Ihrem
+                        Stylesheet
+                        erfolgen).
+                    </p>
+    
+                    <h4 id="head">&lt;head&gt;</h4>
+                    <p>
+                        Das <code>&lt;head&gt;</code>-Element ist ein Container für die Elemente
+                        <code>&lt;title&gt;</code>,
+                        <code>&lt;style&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>,
+                        <code>&lt;script&gt;</code>
+                        und <code>&lt;base&gt;</code>. Insgesamt ist das <code>&lt;head&gt;</code>-Element ein Container für
+                        Metadaten
+                        (Daten über Daten). Es befindet sich zwischen dem Starttag von <code>&lt;html&gt;</code> und dem
+                        Starttag
+                        von
+                        <code>&lt;body&gt;</code>. Die Daten aus dem <code>&lt;head&gt;</code>-Element werden nicht
+                        angezeigt,
+                        sondern
+                        nur vom Browser für Informationen verwendet.
+                    </p>
                 </div>
-                
-                <h4 id="attribute">Attribute</h4>
-                <p>HTML-Elemente können Attribute haben, um zusätzliche Informationen über die
-                    Elemente
-                    bereitzustellen. Diese
-                    Attribute werden im Starttag angegeben und sehen normalerweise so aus:
-                    <em><code>attributName="attributWert"</code></em>.
-                </p>
-
-                <h4 id="headlines">Überschriften</h4>
-                <p>Überschriften werden mit den Tags <code>&lt;h1&gt;&lt;/h1&gt;</code> bis
-                    <code>&lt;h6&gt;&lt;/h6&gt;</code>
-                    definiert. Die
-                    Überschriften von 1 bis 6 werden immer weniger wichtig, wobei <code>&lt;h1&gt;&lt;/h1&gt;</code> die wichtigste
-                    ist.
-                    Überschriften werden von Suchmaschinen verwendet, um den Inhalt und die Struktur Ihrer Webseiten zu
-                    indizieren.
-                </p>
-
-                <h4 id="paragraphes">Absätze</h4>
-                <p>Ein neuer Absatz wird mit dem <code>&lt;p&gt;</code>-Tag definiert. Absätze
-                    beginnen immer
-                    auf einer neuen
-                    Zeile
-                    mit etwas Abstand davor und danach. Der Browser entfernt überflüssige Leerzeichen und Zeilen in
-                    einem
-                    Absatz, wenn die Seite angezeigt wird.</p>
-
-                <p>Es gibt auch zwei leere Tags, die in oder zwischen Absätzen verwendet werden:
-                    <code>&lt;br&gt;</code> und
-                    <code>&lt;hr&gt;</code>.
-                </p>
-
-                <p>Der <code>&lt;br&gt;</code>-Tag definiert einen Zeilenumbruch (Zeilenumbruch),
-                    sogar in
-                    einem Absatz.</p>
-
-                <p>Der <code>&lt;hr&gt;</code>-Tag definiert einen thematischen Abschnitt auf einer
-                    HTML-Seite
-                    und wird meistens
-                    als
-                    horizontale Linie dargestellt. Sein häufigster Verwendungszweck ist die Trennung von Inhalten.</p>
-
-                <h4 id="comments">Kommentare</h4>
-                <p>
-                    Kommentare können mit <code>&lt;!-- Das hier ist ein Kommentar --&gt;</code>
-                    dieser Syntax
-                    hinzugefügt werden.
-                    Das
-                    Ausrufezeichen (!) wird nur im Starttag verwendet. Kommentare können verwendet werden, um Inhalte zu
-                    verbergen
-                    und können über mehrere Zeilen erstreckt werden.</p>
-
-                <h4 id="links">Links</h4>
-                <p>
-                    Das <code>&lt;a&gt;</code>-Tag definiert einen Hyperlink. Das wichtigste
-                    Attribut von
-                    <em><code>&lt;a&gt;</code></em>
-                    ist
-                    <em><code>href</code></em>, das das Ziel des Links angibt. Wenn Sie auf die Links klicken, werden
-                    Sie zur
-                    angegebenen
-                    URL
-                    gesendet. Ein weiteres Attribut von <code>&lt;a&gt;</code> ist <code>target</code>. Mögliche Werte
-                    für das
-                    <code>target</code>-Attribut sind: <code>_self</code>, <code>_blank</code>, <code>_parent</code>,
-                    <code>_top</code>. Sie können fast alles zu einem Link machen, indem Sie <code>&lt;a&gt;</code>
-                    verwenden.
-                </p>
-
-                <h4 id="pictures">Bilder</h4>
-                <p>
-                    Bilder können das Design und das Erscheinungsbild einer Webseite verbessern. Das
-                    <code>&lt;img&gt;</code>-Tag
-                    wird verwendet, um ein Bild einzubetten. Ein Bild wird nicht eingefügt, sondern mit der Webseite
-                    verknüpft.
-                    Dieses Tag ist ein leeres Tag und enthält nur Attribute. Wenn eine Webseite geladen wird, ist es der
-                    Browser,
-                    der das Bild von einem Webserver abruft und in die Seite einfügt.
-                </p>
-
-                <p>
-                    Die beiden erforderlichen Attribute sind <code>src</code> (gibt den Pfad zum
-                    Bild an) und
-                    <code>alt</code>
-                    (gibt
-                    einen alternativen Text für das Bild an). Bilder können auch das Attribut <code>height</code> und
-                    <code>width</code> haben, um die Höhe und Breite des Bildes zu ändern (dies sollte jedoch in Ihrem
-                    Stylesheet
-                    erfolgen).
-                </p>
-
-                <h4 id="head">&lt;head&gt;</h4>
-                <p>
-                    Das <code>&lt;head&gt;</code>-Element ist ein Container für die Elemente
-                    <code>&lt;title&gt;</code>,
-                    <code>&lt;style&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>,
-                    <code>&lt;script&gt;</code>
-                    und <code>&lt;base&gt;</code>. Insgesamt ist das <code>&lt;head&gt;</code>-Element ein Container für
-                    Metadaten
-                    (Daten über Daten). Es befindet sich zwischen dem Starttag von <code>&lt;html&gt;</code> und dem
-                    Starttag
-                    von
-                    <code>&lt;body&gt;</code>. Die Daten aus dem <code>&lt;head&gt;</code>-Element werden nicht
-                    angezeigt,
-                    sondern
-                    nur vom Browser für Informationen verwendet.
-                </p>
-            </div>
-
-            <!--------------------------------------------------New-------------------------------------------------->
-
-            <div class="contain">
-                <h3>Lists</h3>
-                <div>
-                    <h4>____unordered List____</h4>
-                    <code>
-                        <pre>
-                    &lt;ul>
-                        &lt;li>Element 1&lt;/li>
-                        &lt;li>Element 2&lt;/li>
-                        &lt;li>Element 3&lt;/li>
-                    &lt;/ul>                              
-                        </pre>
-                    </code>
-
-                    <h4>_____ordered List_____</h4>
-                    <code>
-                        <pre>
-                    &lt;ol>
-                        &lt;li>Element 1&lt;/li>
-                        &lt;li>Element 2&lt;/li>
-                        &lt;li>Element 3&lt;/li>
-                    &lt;/ol>                               
-                        </pre>
-                    </code>
-
-                    <h4>________dl List________</h4>
-                    <code>
-                        <pre>
-                    &lt;dl>
-                        &lt;dt>Begriff 1&lt;/dt>
-                        &lt;dd>Definition 1&lt;/dd>
-                        &lt;dt>Begriff 2&lt;/dt>
-                        &lt;dd>Definition 2&lt;/dd>
-                    &lt;/dl>                                
-                        </pre>
-                    </code>
+    
+                <!--------------------------------------------------New-------------------------------------------------->
+    
+                <div class="contain">
+                    <h3>Lists</h3>
+                    <div>
+                        <h4>____unordered List____</h4>
+                        <code>
+                            <pre>
+                        &lt;ul>
+                            &lt;li>Element 1&lt;/li>
+                            &lt;li>Element 2&lt;/li>
+                            &lt;li>Element 3&lt;/li>
+                        &lt;/ul>                              
+                            </pre>
+                        </code>
+    
+                        <h4>_____ordered List_____</h4>
+                        <code>
+                            <pre>
+                        &lt;ol>
+                            &lt;li>Element 1&lt;/li>
+                            &lt;li>Element 2&lt;/li>
+                            &lt;li>Element 3&lt;/li>
+                        &lt;/ol>                               
+                            </pre>
+                        </code>
+    
+                        <h4>________dl List________</h4>
+                        <code>
+                            <pre>
+                        &lt;dl>
+                            &lt;dt>Begriff 1&lt;/dt>
+                            &lt;dd>Definition 1&lt;/dd>
+                            &lt;dt>Begriff 2&lt;/dt>
+                            &lt;dd>Definition 2&lt;/dd>
+                        &lt;/dl>                                
+                            </pre>
+                        </code>
+                    </div>
                 </div>
-            </div>
-
-            <div class="contain">
-                <h3>Tables</h3>
-                <div>
-                    <h4>Html-Elements:</h4>
-                    <code>&lt;table></code>Dieses Element definiert die Tabelle
-                    <br><br>
-                    <code>&lt;thead></code>Dieses Element enthält die Kopfzeile der Tabelle
-                    <br><br>
-                    <code>&lt;th></code>Dieses Element definiert eine Kopfzelle in der Tabelle. Der Inhalt ist fett und zentriert
-                    <br><br>
-                    <code>&lt;tr></code>Dieses Element definiert eine Zeile in der Tabelle
-                    <br><br>
-                    <code>&lt;tbody></code>Dieses Element enthält den Hauptinhalt der Tabelle
-                    <br><br>
-                    <code>&lt;td></code>Dieses Element definiert eine Datenzelle in der Tabell
+    
+                <div class="contain">
+                    <h3>Tables</h3>
+                    <div>
+                        <h4>Html-Elements:</h4>
+                        <code>&lt;table></code>Dieses Element definiert die Tabelle
+                        <br><br>
+                        <code>&lt;thead></code>Dieses Element enthält die Kopfzeile der Tabelle
+                        <br><br>
+                        <code>&lt;th></code>Dieses Element definiert eine Kopfzelle in der Tabelle. Der Inhalt ist fett und zentriert
+                        <br><br>
+                        <code>&lt;tr></code>Dieses Element definiert eine Zeile in der Tabelle
+                        <br><br>
+                        <code>&lt;tbody></code>Dieses Element enthält den Hauptinhalt der Tabelle
+                        <br><br>
+                        <code>&lt;td></code>Dieses Element definiert eine Datenzelle in der Tabell
+                    </div>
                 </div>
             </div>
         </div>
