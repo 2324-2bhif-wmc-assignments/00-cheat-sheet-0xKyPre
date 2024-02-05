@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Test</title>
+    <title>404</title>
 </head>
 <body>  
     <input type="checkbox" id="backgroundCheckbox" style="display: none;">
@@ -13,6 +13,9 @@
         <div id="banner_backdrop"></div>
         <div id="banner_content">
             <img src="pictures/bat.gif" alt="bat" id="bat-ghost">
+            <div class="errorcode" id="errorcode">
+                404 nothing here sorry
+            </div>
         </div>
     </div>
 
@@ -21,9 +24,13 @@
             document.body.style.backgroundColor = this.checked ? '#ffffff' : '#000000';
             var imageElement = document.getElementById('bat-ghost');
             imageElement.src = this.checked ? 'pictures/ghost.gif' : 'pictures/bat.gif';
+
             var textElement = document.getElementById('textElement');
             textElement.style.color = this.checked ? 'white' : 'black';
             textElement.style.backgroundColor = this.checked ? 'black' : 'white';
+
+            var errorcode = document.getElementById('errorcode');
+            errorcode.style.color = this.checked ? 'black' : 'white';
           });
     </script>
 </body>

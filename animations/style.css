@@ -41,7 +41,8 @@ div#banner > div#banner_content{
     font-size: 27px;
 }
 
-.window{
-    font-size: 3rem;
-    text-align: center;
+.errorcode{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FFF;
 }
