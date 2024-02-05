@@ -1,0 +1,47 @@
+body{
+    margin: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+div#banner{
+    width: 1000px;
+    height: 550px;
+    margin: 0px auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+div#banner > div#banner_backdrop{
+    position: relative;
+    background: url(pictures/background_repeating.png) repeat-x;
+    width: 3072px;
+    height: 550px;
+    animation: backdrop_roll linear 15s infinite;
+}   
+
+@keyframes backdrop_roll{
+    from{
+        right: 0px;
+    }
+    to{
+        right: 1024px;
+    }
+}
+
+div#banner > div#banner_content{
+    position: relative;
+    top: -65%;
+    left: 15%;
+    color: #FFF;
+    font-size: 27px;
+}
+
+.window{
+    font-size: 3rem;
+    text-align: center;
+}

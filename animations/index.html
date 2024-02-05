@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>  
+    <input type="checkbox" id="backgroundCheckbox" style="display: none;">
+    <label id="textElement" for="backgroundCheckbox" style="color: black;background-color: white; padding:1rem; font-weight:bold; border-radius:2rem;">BAT / GHOST -MODE</label> 
+    <div id="banner">
+        <div id="banner_backdrop"></div>
+        <div id="banner_content">
+            <img src="pictures/bat.gif" alt="bat" id="bat-ghost">
+        </div>
+    </div>
+
+    <script>
+          document.getElementById('backgroundCheckbox').addEventListener('change', function() {
+            document.body.style.backgroundColor = this.checked ? '#ffffff' : '#000000';
+            var imageElement = document.getElementById('bat-ghost');
+            imageElement.src = this.checked ? 'pictures/ghost.gif' : 'pictures/bat.gif';
+            var textElement = document.getElementById('textElement');
+            textElement.style.color = this.checked ? 'white' : 'black';
+            textElement.style.backgroundColor = this.checked ? 'black' : 'white';
+          });
+    </script>
+</body>
+</html>
