@@ -1,12 +1,16 @@
 :root {
-    --überschrift_1_farbe: #fff;
-    --überschrift_2_farbe: #fff;
-    --überschrift_3_farbe: #00ffff;
-    --überschrift_4_farbe: #fff;
-    --überschrift_5_farbe: #76f9f9;
-    --code_farbe: #80FFFD;
-    --absatz_farbe: #889594;
+    --headline_1_farbe: #fff;
+    --headline_2_farbe: #fff;
+    --headline_3_farbe: #00ffff;
+    --headline_4_farbe: #fff;
+    --headline_5_farbe: #76f9f9;
+
+    --content_farbe: #889594;
     --contain_background_color: #3b565d24;
+
+    --default_color:aqua;
+
+    --code_farbe: #80FFFD;
 }
 
 * {
@@ -27,25 +31,25 @@ body {
 
 h1 {
     margin-top: 8rem;
-    color: var(--überschrift_1_farbe);
+    color: var(--headline_1_farbe);
     font-size: 4rem;
 }
 
 h3 {
     font-size: 3rem;
-    color: var(--überschrift_3_farbe);
+    color: var(--headline_3_farbe);
 }
 
 h4 {
     font-size: 2rem;
     margin-top: 1.2rem;
-    color: var(--überschrift_4_farbe);
+    color: var(--headline_4_farbe);
     font-weight: bold;
 }
 
 h5 {
     font-size: 1.5rem;
-    color: var(--überschrift_5_farbe);
+    color: var(--headline_5_farbe);
     margin-top: 1.2rem;
 }
 
@@ -127,7 +131,7 @@ a {
 }
 
 .content {
-    color: var(--absatz_farbe);
+    color: var(--content_farbe);
     text-align: center;
     display: flex;
 }
@@ -143,7 +147,7 @@ table.syntax{
     margin-top: 2rem;
     width: 100%;
     background-color: #cfdddc1b;
-    color: rgb(0, 255, 247);
+    color: var(--default_color);
 }
 
 div.syntax{
@@ -154,13 +158,13 @@ div.syntax{
 }
 
 table.syntax td, table.syntax th{
-    border: aqua solid 0.2rem;
+    border: var(--default_color) solid 0.2rem;
     padding: 0.2rem;
 }
 
 .aqua-border-box{
-    border: aqua;
-    background-color: aqua;
+    border: var(--default_color) ;
+    background-color: var(--default_color) ;
     border-radius: 1.2rem;
     font-size: 1.4rem;
     color: black;
@@ -172,41 +176,6 @@ table.syntax td, table.syntax th{
 
 .box_model{
     margin: 8rem 0 8rem 0;
-}
-
-.margin_box{
-    padding: 8rem 1.8rem 8rem 1.8rem;
-    background-color: rgb(255, 202, 137);
-    border-radius: 0.75rem;
-    transition: all 0.2s linear;
-}
-
-.border_box{
-    padding: 6.5rem 1.8rem 6rem 1.8rem;
-    background-color:rgb(255, 231, 187) ;
-    border: black 0.1rem solid;
-    border-radius: 0.6rem;
-    transition: all 0.2s linear;
-}
-.border_box:hover{
-}
-
-.padding_box{
-    padding: 4.5rem 1.8rem 4.5rem 1.8rem;
-    background-color: rgb(146, 190, 155);
-    border-radius: 0.45rem;
-    transition: all 0.2s linear;
-}
-.padding_box:hover{
-}
-
-.content_box{
-    padding: 3rem 5rem 3rem 5rem;
-    background-color: rgb(155, 201, 242);
-    color: blue;
-    font-weight: bolder;
-    border-radius: 0.3rem;
-    transition: all 0.2s linear;
 }
 
 .contain {
